@@ -32,7 +32,7 @@ div {
 
 .banner {
     position: fixed;
-    background: #000 url("../images/Noah.png") center center;
+    background: #000 url("images/noah.png") center center;
     background-size: cover;
     width: 45%;
     height: 100%;
@@ -41,7 +41,7 @@ div {
 }
 
 .banner .vignette {
-    background: url("../images/vignette.png") center center no-repeat;
+    background: url("images/vignette.png") center center no-repeat;
     background-size: 100% 100%;
     left: 0;
     top: 0;
@@ -99,7 +99,7 @@ div {
     width: 64px;
     height: 64px;
     float: left;
-    background: url('../images/social.png') no-repeat;
+    background: url('images/social.png') no-repeat;
 }
 
 .banner .social .twitter {
