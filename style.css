@@ -32,7 +32,7 @@ div {
 
 .banner {
     position: fixed;
-    background: #000 url("images/noah.png") center center;
+    background: #000 url("images/noahbg.jpg") center center;
     background-size: cover;
     width: 45%;
     height: 100%;
