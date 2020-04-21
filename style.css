@@ -1,0 +1,214 @@
+title {
+    color: rgb(36, 177, 36);
+}
+
+body {
+    background: #242424;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+h1 {
+    color: rgb(17, 90, 17);
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+div {
+    color: white;
+}
+
+.banner {
+    position: fixed;
+    background: #000 url("../images/Noah.png") center center;
+    background-size: cover;
+    width: 45%;
+    height: 100%;
+    float: left;
+    z-index: 100;
+}
+
+.banner .vignette {
+    background: url("../images/vignette.png") center center no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+}
+
+.banner .info {
+    position: absolute;
+    width: calc(100% - 128px);
+    left: 64px;
+    bottom: 64px;
+}
+
+.banner .info img {
+    width: 20%;
+    border-radius: 50%;
+    float: left;
+}
+
+.banner .info .about {
+    width: 75%;
+    float: right;
+}
+
+.banner .info h1 {
+    color: #fff;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+}
+
+.banner .info p {
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.9;
+    font-size: 1.1em;
+    text-align: justify-all;
+    width: 100%;
+    float: left;
+}
+
+.banner .social {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+}
+
+.banner .social a {
+    width: 64px;
+    height: 64px;
+    float: left;
+    background: url('../img/social.png') no-repeat;
+}
+
+.banner .social .twitter {
+    background-position: -64px 0px;
+}
+
+.banner .social .tumblr {
+    background-position: -128px 0px;
+}
+
+.banner .social .email {
+    background-position: -0px 0px;
+}
+
+.banner .social .twitter:hover {
+    background-position: -64px -64px;
+}
+
+.banner .social .tumblr:hover {
+    background-position: -128px -64px;
+}
+
+.banner .social .email:hover {
+    background-position: -0px -64px;
+}
+
+.content {
+    position: relative;
+    width: 53%;
+    min-height: 100%;
+    float: right;
+    overflow-x: hidden;
+    overflow: visible;    
+    padding-top: 60px;
+}
+
+.project-wrapper
+{
+    position:relative;
+    width: 400px;
+    height: 209px;
+    background-color: white;
+    transition-duration: 300ms;
+    display: inline-block;
+}
+
+.project-wrapper:hover {
+    background-color: aquamarine;
+}
+
+.joe-splash
+{
+    display: block;
+    width: 400px;
+    height: 209px;
+}
+
+.pointer
+{
+    position: absolute;
+    transition: all 300ms ease;
+    opacity: 0;
+    background-color: rgb(17, 90, 17);
+}
+.project-wrapper:hover .pointer
+{
+    width: 100%;    
+    opacity: .7;
+}
+.pointer-hovering
+{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.joe-text
+{
+    Color:white;
+    opacity: 0;
+    transition: all 300ms ease;
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 10%;
+    transform: translate(0%, -50%);
+    font-size: 30px;
+}
+.joe-text a
+{
+    Color:white;
+    text-decoration: none;
+}
+.project-wrapper:hover .joe-text
+{
+    top: 50%;
+    opacity: 1;
+}
+.back
+{
+    position: absolute;
+    width: 120px;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-weight: 700;
+    border-radius: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 12px;
+    left: 24px;
+    top: 24px;
+    transition: background .1s,color .1s;
+}
