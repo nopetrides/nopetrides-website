@@ -15,6 +15,10 @@ body {
 
 h1 {
     color: rgb(17, 90, 17);
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 0px;
+    padding-left: 60px;
 }
 
 h2 {
@@ -23,10 +27,15 @@ h2 {
 
 p {
     color: white;
+    padding-right: 60px;
+    padding-bottom: 0px;
+    padding-left: 60px;
+    line-height: 1.5em;
 }
 
 div {
     color: white;
+    display: block;
 }
 
 .banner {
@@ -131,13 +140,16 @@ div {
     min-height: 100%;
     float: right;
     overflow-x: hidden;
-    overflow: visible;    
-    padding-top: 60px;
+    overflow: visible;
 }
 
-.project-wrapper
-{
-    position:relative;
+.description {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.project-wrapper {
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -145,27 +157,17 @@ div {
     display: inline-block;
 }
 
-.project-wrapper:hover {
-    background-color: aquamarine;
-}
-
-.joe-splash
-{
+.joe-splash {
     display: block;
     width: 100%;
     height: 100%;
 }
-.project-wrapper:hover .joe-text
-{
-    top: 50%;
-    opacity: 1;
-}
-.back
-{
+
+.back {
     position: absolute;
     width: 120px;
-    background: rgba(0,0,0,.6);
-    color: #fff;
+    background: rgba(0, 0, 0, .6);
+    color: white;
     font-weight: 700;
     border-radius: 32px;
     text-transform: uppercase;
@@ -173,5 +175,48 @@ div {
     padding: 8px 12px;
     left: 24px;
     top: 24px;
-    transition: background .1s,color .1s;
+    transition: background .1s, color .1s;
+}
+
+.back:hover {
+    background-color: rgb(17, 90, 17);
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+}
+
+.ending {
+    background: gray;
+    width: 100%;
+    padding: 60px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.links {
+    padding: 20px 60px 60px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.links img {
+    width: 150px;
+    height: 45px;
+}
+
+.links a {
+    float: left;
+    padding: 8px 16px 4px 12px;
+    margin-right: 12px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.links a p {
+    margin-top: -3px;
+    float: left;
 }

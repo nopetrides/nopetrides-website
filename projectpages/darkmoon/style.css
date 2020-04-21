@@ -15,24 +15,32 @@ body {
 
 h1 {
     color: rgb(17, 90, 17);
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 0px;
+    padding-left: 60px;
 }
 
 h2 {
-    color: rgb(17, 90, 17);
-    font-size: 40px;
+    color: white;
 }
 
 p {
     color: white;
+    padding-right: 60px;
+    padding-bottom: 0px;
+    padding-left: 60px;
+    line-height: 1.5em;
 }
 
 div {
     color: white;
+    display: block;
 }
 
 .banner {
     position: fixed;
-    background: #000 url("../images/Noah.png") center center;
+    background: #000 url("../../images/Noah.png") center center;
     background-size: cover;
     width: 45%;
     height: 100%;
@@ -41,7 +49,7 @@ div {
 }
 
 .banner .vignette {
-    background: url("../images/vignette.png") center center no-repeat;
+    background: url("../../images/vignette.png") center center no-repeat;
     background-size: 100% 100%;
     left: 0;
     top: 0;
@@ -99,7 +107,7 @@ div {
     width: 64px;
     height: 64px;
     float: left;
-    background: url('../images/social.png') no-repeat;
+    background: url('../img/social.png') no-repeat;
 }
 
 .banner .social .twitter {
@@ -133,105 +141,49 @@ div {
     float: right;
     overflow-x: hidden;
     overflow: visible;
-    padding-top: 60px;
 }
 
-.project-wrapper-major {
+.description {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.project-wrapper {
     position: relative;
-    width: 400px;
-    height: 209px;
+    width: 100%;
+    height: 100%;
     background-color: white;
     transition-duration: 300ms;
     display: inline-block;
 }
 
-.project-wrapper-major img {
-    position: absolute;
-    left: 0;
-    top: 0;
+.splash-image {
+    display: block;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center center;
-    transition: opacity .25s, transform .25s;
 }
 
-.project-wrapper-major:hover {
-    background-color: aquamarine;
-}
-
-.project-wrapper-major:hover .pointer {
-    width: 100%;
-    opacity: .7;
-}
-
-.project-wrapper-major:hover .splash-text {
-    top: 50%;
-    opacity: 1;
-}
-
-.project-wrapper-lesser {
-    position: relative;
-    width: 350px;
-    height: 175px;
-    background-color: white;
-    transition-duration: 300ms;
-    display: inline-block;
-}
-
-.project-wrapper-lesser img {
+.back {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    transition: opacity .25s, transform .25s;
+    width: 120px;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    font-weight: 700;
+    border-radius: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 12px;
+    left: 24px;
+    top: 24px;
+    transition: background .1s, color .1s;
 }
 
-.project-wrapper-lesser:hover {
-    background-color: aquamarine;
-}
-
-.project-wrapper-lesser:hover .pointer {
-    width: 100%;
-    opacity: .7;
-}
-
-.project-wrapper-lesser:hover .splash-text {
-    top: 50%;
-    opacity: 1;
-}
-
-.pointer {
-    position: absolute;
-    transition: all 300ms ease;
-    opacity: 0;
+.back:hover {
     background-color: rgb(17, 90, 17);
 }
 
-.pointer-hovering {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-.splash-text {
-    Color: white;
-    opacity: 0;
-    transition: all 300ms ease;
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    transform: translate(0%, -50%);
-    font-size: 30px;
-    text-align: center;
-}
-
-.splash-text a {
-    Color: white;
+.back a {
+    color: white;
     text-decoration: none;
 }
 
@@ -244,8 +196,27 @@ div {
     box-sizing: border-box;
 }
 
-.portfolio {
-    padding-right: 60px;
-    padding-bottom: 0px;
-    padding-left: 60px;
+.links {
+    padding: 20px 60px 60px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.links img {
+    width: 150px;
+    height: 45px;
+}
+
+.links a {
+    float: left;
+    padding: 8px 16px 4px 12px;
+    margin-right: 12px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.links a p {
+    margin-top: -3px;
+    float: left;
 }
