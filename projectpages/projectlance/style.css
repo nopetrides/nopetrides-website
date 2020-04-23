@@ -8,28 +8,29 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
 }
 
 h1 {
-    color: rgb(17, 90, 17);
-    padding-top: 60px;
     padding-right: 60px;
     padding-bottom: 0px;
     padding-left: 60px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 h2 {
-    color: white;
+    color: rgb(17, 90, 17);
+    text-align: center;
+    font-size: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 p {
     color: white;
-    padding-right: 60px;
-    padding-bottom: 0px;
-    padding-left: 60px;
     line-height: 1.5em;
 }
 
@@ -38,14 +39,17 @@ div {
     display: block;
 }
 
+.whole {
+    display: block;
+}
+
 .banner {
-    position: fixed;
+    position: relative;
     background: #000 url("../../images/noahbg.jpg") center center;
     background-size: cover;
-    width: 45%;
-    height: 100%;
-    float: left;
-    z-index: 100;
+    width: 100%;
+    min-height: 400px;
+    display: block;
 }
 
 .banner .vignette {
@@ -54,15 +58,14 @@ div {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    min-height: 400px;
     opacity: 0.75;
 }
 
 .banner .info {
     position: absolute;
-    width: calc(100% - 128px);
-    left: 64px;
-    bottom: 64px;
+    bottom: 0px;
+    background: rgb(50, 50, 50);
 }
 
 .banner .info img {
@@ -136,16 +139,23 @@ div {
 
 .content {
     position: relative;
-    width: 55%;
-    min-height: 100%;
-    float: right;
+    width: 100%;
+    height: 100%;
+    float: left;
     overflow-x: hidden;
-    overflow: visible;
+    display: block;
 }
-
 .description {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0px 5px;
+}
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    margin: 0 -5px;
 }
 
 .project-wrapper {
@@ -157,7 +167,7 @@ div {
     display: inline-block;
 }
 
-.splash-image {
+.main-splash {
     display: block;
     width: 100%;
     height: 100%;
@@ -188,9 +198,9 @@ div {
 }
 
 .ending {
-    background: gray;
+    background: rgb(50, 50, 50);
+    padding: 10px;
     width: 100%;
-    padding: 60px;
     float: left;
     text-align: center;
     box-sizing: border-box;
@@ -217,4 +227,48 @@ div {
 .links a p {
     margin-top: -3px;
     float: left;
+}
+
+@media only screen and (min-width: 768px) {
+    .h2
+    {
+        text-align: left;
+    }
+    .banner {
+        position: fixed;
+        width: 45%;
+        height: 100%;
+        float: left;
+        z-index: 100;
+    }
+    .content {
+        position: relative;
+        width: 55%;
+        min-height: 100%;
+        float: right;
+        overflow-x: hidden;
+    }
+    .description {
+        padding-right: 60px;
+        padding-left: 60px;
+        margin: 0px 5px;
+    }
+    .ending {
+        width: 100%;
+        padding: 60px;
+        float: left;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .banner .vignette {
+        width: 100%;
+        height: 100%;
+    }
+    .banner .info {
+        position: absolute;
+        width: calc(100% - 128px);
+        left: 64px;
+        bottom: 64px;
+        background: none;
+    }
 }
