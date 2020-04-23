@@ -24,20 +24,18 @@ h1 {
 
 h2 {
     color: rgb(17, 90, 17);
-    padding-right: 60px;
-    padding-bottom: 0px;
-    padding-left: 60px;
     font-size: 40px;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: black;    
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: -5px;
 }
 
 p {
     color: white;
-    padding-right: 60px;
-    padding-bottom: 0px;
-    padding-left: 60px;
     line-height: 1.5em;
+    margin-top: 0px;
 }
 
 div {
@@ -140,6 +138,11 @@ div {
 .banner .social .email:hover {
     background-position: -0px -64px;
 }
+.portfolio {
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
 
 .content {
     position: relative;
@@ -150,12 +153,12 @@ div {
     display: block;
 }
 
-.list{
+.list {
     width: 100%;
     height: 100%;
     display: flex;
     overflow: hidden;
-    margin: 0 -5px;
+    margin: 5px -5px;
 }
 
 .project-wrapper-major {
@@ -165,6 +168,7 @@ div {
     background-color: white;
     transition-duration: 300ms;
     display: inline-block;
+    margin: 0px 5px;
     background: url('./projectpages/gijoe/images/joesplash.png') center center no-repeat;
 }
 
@@ -203,7 +207,7 @@ div {
     background-color: white;
     transition-duration: 300ms;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0px 5px;
 }
 
 .project-wrapper-lesser img {
@@ -235,7 +239,7 @@ div {
     opacity: 1;
 }
 
-.other-list{
+.other-list {
     width: 100%;
     height: 100%;
     display: flex;
@@ -299,9 +303,9 @@ div {
 }
 
 .ending {
-    background: gray;
+    background: rgb(50, 50, 50);;
+    padding: 10px;
     width: 100%;
-    padding: 60px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -311,6 +315,10 @@ div {
 }
 
 @media only screen and (min-width: 768px) {
+    h2 {
+        text-align: left;
+    }
+    
     .portfolio {
         padding-right: 60px;
         padding-bottom: 0px;
@@ -334,7 +342,6 @@ div {
         padding-top: 60px;
     }
     .ending {
-        background: gray;
         width: 100%;
         padding: 60px;
         float: left;
