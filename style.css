@@ -18,15 +18,11 @@ h1 {
     padding-right: 60px;
     padding-bottom: 0px;
     padding-left: 60px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
 }
 
 h2 {
     color: rgb(17, 90, 17);
     font-size: 40px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;    
     text-align: center;
     margin-bottom: 0px;
     margin-left: -5px;
@@ -158,7 +154,7 @@ div {
     height: 100%;
     display: flex;
     overflow: hidden;
-    margin: 5px -5px;
+    margin: 5px -5px 5px 0px;
 }
 
 .project-wrapper-major {
@@ -168,7 +164,7 @@ div {
     background-color: white;
     transition-duration: 300ms;
     display: inline-block;
-    margin: 0px 5px;
+    margin: 0px 5px 5px 5px;
     background: url('./projectpages/gijoe/images/joesplash.png') center center no-repeat;
 }
 
@@ -192,7 +188,7 @@ div {
 }
 
 .project-wrapper-major .splash-text {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .project-wrapper-major:hover .splash-text {
@@ -207,7 +203,7 @@ div {
     background-color: white;
     transition-duration: 300ms;
     display: inline-block;
-    margin: 0px 5px;
+    margin: 0px 5px 0px 5px;
 }
 
 .project-wrapper-lesser img {
@@ -231,7 +227,7 @@ div {
 }
 
 .project-wrapper-lesser .splash-text {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .project-wrapper-lesser:hover .splash-text {
@@ -242,8 +238,9 @@ div {
 .other-list {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: block;
     overflow: hidden;
+    margin-right: -5px;
 }
 
 .other-wrapper {
@@ -251,7 +248,7 @@ div {
     width: 100%;
     height: 60px;
     background-color: rgb(17, 90, 17);
-    display: inline-block;
+    display: block;
     transition: all 300ms;
 }
 
@@ -262,8 +259,9 @@ div {
 .other-link {
     position: relative;
     text-align: center;
-    top: 30%;
-    font-size: 24px;
+    top: 35%;
+    font-size: 20px;
+    margin: 5px;
 }
 
 .other-link a {
@@ -316,6 +314,7 @@ div {
 
 @media only screen and (min-width: 768px) {
     h2 {
+        padding-top: 60px;
         text-align: left;
         margin: 0px;
     }
@@ -340,7 +339,6 @@ div {
         min-height: 100%;
         float: right;
         overflow-x: hidden;
-        padding-top: 60px;
     }
     .ending {
         width: 100%;
@@ -377,5 +375,9 @@ div {
     }
     .project-wrapper-lesser .splash-text {
         font-size: 30px;
+    }        
+    .other-link {
+        font-size: 30px;
+        top: 25%;        
     }
 }
