@@ -17,16 +17,12 @@ h1 {
     padding-right: 60px;
     padding-bottom: 0px;
     padding-left: 60px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
 }
 
 h2 {
     color: rgb(17, 90, 17);
     text-align: center;
     font-size: 40px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
 }
 
 p {
@@ -226,7 +222,7 @@ div {
 }
 
 @media only screen and (min-width: 768px) {
-    .h2
+    h2
     {
         text-align: left;
     }
