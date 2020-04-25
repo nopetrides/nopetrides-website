@@ -1,5 +1,5 @@
 title {
-    color: rgb(36, 177, 36);
+    color: #00A101;
 }
 
 body {
@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    color: rgb(17, 90, 17);
+    color: #00A101;
     text-align: center;
     font-size: 40px;
     -webkit-text-stroke-width: 1px;
@@ -187,7 +187,7 @@ div {
 }
 
 .back:hover {
-    background-color: rgb(17, 90, 17);
+    background-color: #00A101;
 }
 
 .back a {
@@ -202,6 +202,11 @@ div {
     float: left;
     text-align: center;
     box-sizing: border-box;
+}
+
+.ending a{
+    text-decoration-color: #00A101;
+    color: #00A101;
 }
 
 .links {
