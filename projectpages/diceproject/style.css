@@ -23,6 +23,8 @@ h2 {
     color: #00A101;
     text-align: center;
     font-size: 40px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
 p {
@@ -211,18 +213,23 @@ div {
     padding: 20px 60px 60px;
     box-sizing: border-box;
     display: block;
-    text-align: center;
+}
+
+.links img {
+    width: 100%;
 }
 
 .links a {
     padding: 8px 16px 4px 12px;
-    color: White;
+    margin-right: 12px;
+    color: #000;
+    font-weight: 700;
     text-decoration: none;
-    font-size: 102px;
 }
 
-.links a:hover {
-    color:  #00A101;
+.links a p {
+    margin-top: -3px;
+    float: left;
 }
 
 @media only screen and (min-width: 768px) {
