@@ -1,3 +1,6 @@
 {
-    "html.format.wrapLineLength": 90
+    "html.format.wrapLineLength": 90,
+    "editor.rulers": [
+    90
+    ]
 }
