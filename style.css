@@ -303,6 +303,7 @@ footer {
     width: 100%;
     text-align: center;
     box-sizing: border-box;
+    display: block;
 }
 
 footer a {
