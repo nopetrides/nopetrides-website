@@ -1,0 +1,88 @@
+body {
+    background: rgb(15 19 22);
+}
+
+#chicken {
+    transform: rotateX(-15deg) rotateY(20deg);
+    transform-style: preserve-3d;
+    position: relative;
+    left: 16rem;
+    top: 16rem;
+    transform-origin: 6rem 6rem;
+    transform-style: preserve-3d;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+}
+
+#chicken .c1 {
+    position: absolute;
+    top: 18rem;
+  }
+  
+#chicken .c2 {
+    position: absolute;
+    top: 6rem;
+}
+
+#chicken .c3 {
+    position: absolute;
+    transform: translateZ(2rem) translateY(2rem);
+}
+
+
+#chicken>div {
+    height: 6rem;
+    width: 6rem;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+
+.cube.head {
+    width: 6rem;
+    height: 8rem;
+}
+
+.cube.body {
+    width: 10rem;
+    height: 10rem;
+    left: -2rem;
+}
+
+.cube>div,
+.cube:after,
+.cube:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    background: white;
+}
+
+.cube:before {
+    transform: rotateX(-90deg);
+    transform-origin: 0 0;
+}
+
+.cube:after {
+    transform: translateZ(-6rem);
+    transform-origin: 0 50%;
+}
+
+.cube .left {
+    transform: rotateY(90deg);
+    transform-origin: 0 0;
+    background: #ddd;
+}
+
+.cube .right {
+    transform-origin: 100% 0;
+    background: #ddd;
+    transform: rotateY(-90deg);
+}
+
+.cube .bottom {
+    transform: rotateX(90deg);
+    transform-origin: 100% 100%;
+}

@@ -1,0 +1,139 @@
+body {
+  background: rgb(15 19 22);
+  font-family: 'Silkscreen', cursive;
+}
+
+.c14,
+.c15,
+.c16 {
+  display: none;
+}
+
+#hat:checked~#chicken .c14,
+#hat:checked~#chicken .c15,
+#hat:checked~#chicken .c16 {
+  display: block;
+}
+
+#chicken {
+  transform: rotateX(-15deg) rotateY(20deg);
+  transform-style: preserve-3d;
+  position: relative;
+  left: 16rem;
+  top: 16rem;
+  transform-origin: 6rem 6rem;
+  transform-style: preserve-3d;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+
+#chicken:hover>h1 {
+  transform: scale(1.1);
+}
+
+#chicken>div {
+  height: 6rem;
+  width: 6rem;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+#chicken .c1 {
+  position: absolute;
+  top: 18rem;
+}
+
+#chicken .c2 {
+  position: absolute;
+  top: 6rem;
+}
+
+#chicken .c3 {
+  position: absolute;
+  transform: translateZ(2rem) translateY(2rem);
+}
+
+#chicken .c14 {
+  transform: translateZ(4rem) translateY(0rem);
+}
+
+#chicken .c15 {
+  transform: translateZ(3rem) translateY(-8rem);
+}
+
+#chicken .c16 {
+  transform: translateZ(3rem) translateY(-18rem);
+}
+
+.cube {
+  position: relative;
+  height: 6em;
+  width: 6em;
+  transform-style: preserve-3d;
+}
+
+.cube>div,
+.cube:after,
+.cube:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  background: white;
+}
+
+.cube:before {
+  transform: rotateX(-90deg);
+  transform-origin: 0 0;
+}
+
+.cube:after {
+  transform: translateZ(-6rem);
+  transform-origin: 0 50%;
+}
+
+.cube .left {
+  transform: rotateY(90deg);
+  transform-origin: 0 0;
+  background: #ddd;
+}
+
+.cube .right {
+  transform-origin: 100% 0;
+  background: #ddd;
+  transform: rotateY(-90deg);
+}
+
+.cube .bottom {
+  transform: rotateX(90deg);
+  transform-origin: 100% 100%;
+}
+
+.cube.body {
+  width: 10rem;
+  height: 10rem;
+  left: -2rem;
+}
+
+.cube.head {
+  width: 6rem;
+  height: 8rem;
+}
+
+
+.cube.leg {
+  width: 1rem;
+  height: 6rem;
+}
+
+
+.cube.head:before {
+  height: 6rem;
+}
+
+
+.cube.body:after,
+.cube.wing:after {
+  transform: translateZ(-10rem);
+}

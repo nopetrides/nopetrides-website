@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
-
+<!--This website was created by Noah Petrides-->
+<!--Everything in this file is html and read as such by a browser-->
+<html lang="en">
+<!--Info about the webpage, not part of the actual page contents-->
 <head>
 	<title>Noah Petrides</title>
 
@@ -12,44 +14,57 @@
 
 	<meta name="description"
 		content="Hello! I am a game programmer in Vancouver, Canada. When I make my own games, I do art and music too!">
-	<meta name="keywords" content="noah petrides game developer programmer gamedev indie games web design art">
+	<meta name="keywords"
+		content="noah petrides game developer programmer gamedev indie games web design art">
 	<meta name="author" content="Noah Petrides" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 	<link rel="icon" href="images/ico.png">
+
 	<link rel="shortcut icon" href="images/ico.png" type="image/x-icon">
 
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
+<!--The core displaying website-->
 <body>
+	<!--Wrapper for entire layout-->
 	<div class="whole">
-		<div class="banner">
+		<!--Fluid side banner, becomes top header when on mobile, 
+			contains personal and contact info-->
+		<header>
 			<div class="vignette">&nbsp;</div>
 			<div class="info">
-				<img src="images/noah.jpg" alt="Noah Petrides" />
+				<img src="images/noah.jpg" alt="Noah Petrides"/>
 				<div class="about">
 					<h1>Noah Petrides</h1>
-					<p>Hello! I am a game programmer in Vancouver, Canada. When I make my own games, I do art and music
-						too!
+					<p>Hello! I am a game programmer in Vancouver, Canada. When I make my
+						own games, I do art and music too!
 					</p>
 				</div>
 			</div>
+
 			<div class="social">
 				<a class="linkedin" href="https://www.linkedin.com/in/noah-petrides/"></a>
 				<a class="facebook" href="https://facebook.com/noah.petrides"></a>
 				<a class="email" href="mailto:nopetrides@gmail.com"></a>
 			</div>
-		</div>
-		<div class="content">
-			
+		</header>
+		<!--Fluid right side, contains portfolio links-->
+		<!--Previously content-->
+		<main>
 			<div class="portfolio">
+				<!--showcases most recent works-->
 				<div class="section">
 					<h2 id="games"><b>Games I Worked On</b></h2>
-					<p>Games are my passion. I've been playing them all my life but decided I love making them just as
-						much!
-					</p>
+					<p>Games are my passion. I've been playing them all my life but
+						decided I love making them just as much!</p>
+
+					<!--Main project on display-->
 					<div class="list">
 						<div class="project-wrapper-major">
 							<a href=projectpages/lightwave/lightwave.html>
@@ -58,46 +73,61 @@
 								<div class="pointer pointer-hovering">
 								</div>
 							</a>
-							<div class="splash-text"><a href=projectpages/lightwave/lightwave.html><b>LightWave</b></a>
+
+							<div class="splash-text"><a
+									href=projectpages/lightwave/lightwave.html><b>LightWave</b></a>
 							</div>
 						</div>
 					</div>
+					<!--Secondary games-->
 					<div class="list">
 						<div class="project-wrapper-major">
 							<a href=projectpages/gijoe/gijoe.html>
 								<img src="./projectpages/gijoe/images/joesplash.png"
-									alt="G.I. Joe: War on Cobra splash image" class="splash-image">
-								<div class="pointer pointer-hovering">
-								</div>
-							</a>
-							<div class="splash-text"><a href=projectpages/gijoe/gijoe.html><b>G.I. Joe: War On
-										Cobra</b></a>
-							</div>
-						</div>
-						<div class="project-wrapper-major">
-							<a href=projectpages/darkmoon/darkmoon.html>
-								<img src="./projectpages/darkmoon/images/lionheart.png"
-									alt="Lionheart: Dark Moon splash image" class="splash-image">
-								<div class="pointer pointer-hovering">
-								</div>
-							</a>
-							<div class="splash-text"><a href=projectpages/darkmoon/darkmoon.html><b>Lionheart: Dark
-										Moon</b></a>
-							</div>
-						</div>
-					</div>
-					<div class="list">
-						<div class="project-wrapper-lesser">
-							<a href=projectpages/coffee/coffee.html>
-								<img src="./projectpages/coffee/images/coffee.jpg" alt="Where's My Coffee splash image"
+									alt="G.I. Joe: War on Cobra splash image"
 									class="splash-image">
 								<div class="pointer pointer-hovering">
 								</div>
 							</a>
-							<div class="splash-text"><a href=projectpages/coffee/coffee.html><b>Where's My
-										Coffee?</b></a>
+
+							<div class="splash-text"><a
+									href=projectpages/gijoe/gijoe.html>
+									<b>G.I. Joe: War On Cobra</b></a>
 							</div>
 						</div>
+
+						<div class="project-wrapper-major">
+							<a href=projectpages/darkmoon/darkmoon.html>
+								<img src="./projectpages/darkmoon/images/lionheart.png"
+									alt="Lionheart: Dark Moon splash image"
+									class="splash-image">
+								<div class="pointer pointer-hovering">
+								</div>
+							</a>
+
+							<div class="splash-text"><a
+									href=projectpages/darkmoon/darkmoon.html>
+									<b>Lionheart: Dark Moon</b></a>
+							</div>
+						</div>
+					</div>
+					<!--Tertiary projects-->
+					<div class="list">
+						<div class="project-wrapper-lesser">
+							<a href=projectpages/coffee/coffee.html>
+								<img src="./projectpages/coffee/images/coffee.jpg"
+									alt="Where's My Coffee splash image"
+									class="splash-image">
+								<div class="pointer pointer-hovering">
+								</div>
+							</a>
+
+							<div class="splash-text"><a
+									href=projectpages/coffee/coffee.html>
+									<b>Where's My Coffee?</b></a>
+							</div>
+						</div>
+
 						<div class="project-wrapper-lesser">
 							<a href=projectpages/projectlance/projectlance.html>
 								<img src="./projectpages/projectlance/images/projectlance.png"
@@ -105,69 +135,169 @@
 								<div class="pointer pointer-hovering">
 								</div>
 							</a>
-							<div class="splash-text"><a href=projectpages/projectlance/projectlance.html><b>Project
-										Lance</b></a>
+
+							<div class="splash-text"><a
+									href=projectpages/projectlance/projectlance.html>
+									<b>Project Lance</b></a>
 							</div>
 						</div>
 					</div>
+					<!--Anything left over *TODO link to projects index page?-->
 					<div class="list">
 						<div class="project-wrapper-lesser">
 							<a href=projectpages/shields/shields.html>
-								<img src="./projectpages/shields/images/shieldsSplash.png" alt="Shields Game Screenshot"
-									class="splash-image">
+								<img src="./projectpages/shields/images/shieldsSplash.png"
+									alt="Shields Game Screenshot" class="splash-image">
 								<div class="pointer pointer-hovering">
 								</div>
 							</a>
-							<div class="splash-text"><a href=projectpages/shields/shields.html><b>Shields Demo Project</b></a>
+
+							<div class="splash-text"><a
+									href=projectpages/shields/shields.html>
+									<b>Shields Demo Project</b></a>
 							</div>
 						</div>
+
 						<div class="project-wrapper-lesser">
 							<a href=projectpages/diceproject/dice.html>
-								<img src="./projectpages/diceproject/images/dicegame.jpg" alt="Dice Game Screenshot"
-									class="splash-image">
+								<img src="./projectpages/diceproject/images/dicegame.jpg"
+									alt="Dice Game Screenshot" class="splash-image">
 								<div class="pointer pointer-hovering">
 								</div>
 							</a>
-							<div class="splash-text"><a href=projectpages/diceproject/dice.html><b>Dice Demo Project</b></a>
+
+							<div class="splash-text"><a
+									href=projectpages/diceproject/dice.html>
+									<b>Dice Demo Project</b></a>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!--Teaching info-->
 				<div class="section">
-					<h2 id="links"><b>Other Things</b></h2>
-					<p>I have a ton of other hobbies. Here are some of the ones you can check out on the web!</p>
-					<div style="cursor: pointer;" onclick="window.location = 'http://dndg.ca';" class="other-list">
+					<h2 id="links"><b>Professional Talents</b></h2>
+					<p>I am a Senior Software Engineer, and built my career on my 
+						professional programming experience developing video games. 
+						I am also a professor, and teach multiple college courses related 
+						to programming. Follow the links to see more about the courses 
+						I've taught, with video lectures and code examples.
+					</p>
+
+					<div style="cursor: pointer;"
+						onclick="window.location = 'csd_2354_cs_programming/csd_2354_home.html';"
+						class="other-list">
 						<div class="other-wrapper">
-							<div class="other-link"><a href=http://dndg.ca><b>Dungeons and Do-Gooders</b></a>
+							<div class="other-link"><a
+									href=csd_2354_cs_programming/csd_2354_home.html>
+									<b>C# Programming</b></a>
 							</div>
 						</div>
 					</div>
-					<div style="cursor: pointer;" onclick="window.location = 'https://www.youtube.com/channel/UCCGh3tU2Tb-4C5f_2NJpzSg';" class="other-list">
+
+					<div style="cursor: pointer;"
+						onclick="window.location = 'csd_1103_html_css/csd_1103_home.html';"
+						class="other-list">
 						<div class="other-wrapper">
-							<div class="other-link"><a href=https://www.youtube.com/channel/UCCGh3tU2Tb-4C5f_2NJpzSg><b>Motorcycle Videos</b></a>
-							</div>
-						</div>
-					</div>
-					<div style="cursor: pointer;" onclick="window.location = 'https://www.youtube.com/channel/UCN35Quf5BxjZ-qkXhqAUWBg/videos';" class="other-list">
-						<div class="other-wrapper">
-							<div class="other-link"><a href=https://www.youtube.com/channel/UCN35Quf5BxjZ-qkXhqAUWBg/videos><b>Guitar Videos</b></a>
+							<div class="other-link"><a
+									href=csd_1103_html_css/csd_1103_home.html>
+									<b>HTML & CSS</b></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class=bottom>
+				<!--YouTube-->
+				<div class="section">
+					<h2 id="links"><b>Videography</b></h2>
+					<p>Occasionally, I like to make videos.
+						I record my musical talents, events I attend,
+						and upload recording from games I've played and made.
+						Find me on YouTube!</p>
+
+					<div style="cursor: pointer;"
+						onclick="window.location = 'https://www.youtube.com/channel/UCN35Quf5BxjZ-qkXhqAUWBg/videos';"
+						class="other-list">
+						<div class="other-wrapper">
+							<div class="other-link"><a
+									href=https://www.youtube.com/channel/UCN35Quf5BxjZ-qkXhqAUWBg/videos>
+									<b>Guitar Videos</b></a>
+							</div>
+						</div>
+					</div>
+
+					<div style="cursor: pointer;"
+						onclick="window.location = 'https://www.youtube.com/channel/UCCGh3tU2Tb-4C5f_2NJpzSg';"
+						class="other-list">
+						<div class="other-wrapper">
+							<div class="other-link"><a
+									href=https://www.youtube.com/channel/UCCGh3tU2Tb-4C5f_2NJpzSg>
+									<b>Motorcycle Videos</b></a>
+							</div>
+						</div>
+					</div>
+
+					<div style="cursor: pointer;"
+						onclick="window.location = 'https://www.youtube.com/channel/UC_0bvdhEcOqaoPcoSlTHifA';"
+						class="other-list">
+						<div class="other-wrapper">
+							<div class="other-link"><a
+									href=https://www.youtube.com/channel/UC_0bvdhEcOqaoPcoSlTHifA>
+									<b>Personal Channel with everything else</b></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Misc links to cool things I've done-->
+				<div class="section">
+					<h2 id="links"><b>Other Talents</b></h2>
+					<p>I have a ton of other hobbies. Here are some of the ones you can
+						check out on the web!</p>
+
+					<div style="cursor: pointer;"
+						onclick="window.location = 'art_portfolio/art_home.html';"
+						class="other-list">
+						<div class="other-wrapper">
+							<div class="other-link"><a
+									href=art_portfolio/art_home.html>
+									<b>Art I Made</b></a>
+							</div>
+						</div>
+					</div>
+
+					<div style="cursor: pointer;"
+						onclick="window.location = 'authorship/author_home.html';"
+						class="other-list">
+						<div class="other-wrapper">
+							<div class="other-link"><a
+									href=authorship/author_home.html>
+									<b>Stories I'm Writing</b></a>
+							</div>
+						</div>
+					</div>
+
+					<div style="cursor: pointer;"
+						onclick="window.location = 'someurlToThing';"
+						class="other-list">
+						<div class="other-wrapper">
+							<div class="other-link"><a
+									href=someUrlToThing>
+									<b>Coming soon</b></a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="works">
-				<div class="ending">
-					<i class="fa fa-github" aria-hidden="true"></i>
-					Hey, I created this website! <a
-						href="https://github.com/nopetrides">Check out my GitHub
-						</a>
-						<i class="fa fa-github" aria-hidden="true"></i>
-				</div>
+			<!--spacer-->
+			<div class=bottom>
 			</div>
-		</div>
+
+			<!--Previously "ending"-->
+			<footer>
+				<i class="fa fa-github" aria-hidden="true"></i>
+				Hey, I created this website!
+				<a href="https://github.com/nopetrides"> Check out my GitHub</a>
+				<i class="fa fa-github" aria-hidden="true"></i>
+			</footer>
+		</main>
 	</div>
 </body>
 
