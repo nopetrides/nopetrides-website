@@ -1,0 +1,17 @@
+.links {
+    padding: 20px 60px 60px 60px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+}
+
+.links a {
+    padding: 8px 16px 4px 12px;
+    color: White;
+    text-decoration: none;
+    font-size: 102px;
+}
+
+.links a:hover {
+    color:  #00A101;
+}

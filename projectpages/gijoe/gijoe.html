@@ -18,35 +18,23 @@
     <meta name="author" content="Noah Petrides" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="icon" href="img/ico.png">
-    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <link rel="icon" href="/images/ico.png">
+    <link rel="shortcut icon" href="/images/ico.png" type="image/x-icon">
 
     <link rel="stylesheet" href="../return.css">
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
     <div class="whole">
-        <header>
-            <div class="vignette">&nbsp;</div>
-            <div class="info">
-                <img src="../../images/noah.jpg" alt="Noah Petrides" />
-                <div class="about">
-                    <h1>Noah Petrides</h1>
-                    <p>Hello! I am a game programmer in Vancouver, Canada. When I make my
-                        own games, I do art and music too!
-                    </p>
-                </div>
-            </div>
 
-            <div class="social">
-                <a class="linkedin" href="https://www.linkedin.com/in/noah-petrides/"></a>
-                <a class="facebook" href="https://facebook.com/noah.petrides"></a>
-                <a class="email" href="mailto:nopetrides@gmail.com"></a>
-            </div>
-        </header>
+        <!--JS inserted from components/header.js-->
+		<header-component></header-component>
 
         <main>
             <div class="section">
@@ -86,12 +74,9 @@
                 </div>
             </div>
 
-            <footer>
-                <i class="fa fa-github" aria-hidden="true"></i>
-                Hey, I created this website!
-                <a href="https://github.com/nopetrides"> Check out my GitHub</a>
-                <i class="fa fa-github" aria-hidden="true"></i>
-            </footer>
+            <!--JS inserted from components/footer.js-->
+			<footer-component></footer-component>
+
         </main>
     </div>
 </body>

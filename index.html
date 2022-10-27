@@ -3,6 +3,7 @@
 <!--Everything in this file is html and read as such by a browser-->
 <html lang="en">
 <!--Info about the webpage, not part of the actual page contents-->
+
 <head>
 	<title>Noah Petrides</title>
 
@@ -28,33 +29,18 @@
 
 	<link rel="stylesheet"
 		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<script src="components/header.js" type="text/javascript" defer></script>
+	<script src="components/footer.js" type="text/javascript" defer></script>
 </head>
 
 <!--The core displaying website-->
+
 <body>
 	<!--Wrapper for entire layout-->
 	<div class="whole">
-		<!--Fluid side banner, becomes top header when on mobile, 
-			contains personal and contact info-->
-		<header>
-			<div class="vignette">&nbsp;</div>
-			<div class="info">
-				<img src="images/noah.jpg" alt="Noah Petrides"/>
-				<div class="about">
-					<h1>Noah Petrides</h1>
-					<p>Hello! I am a game programmer in Vancouver, Canada. When I make my
-						own games, I do art and music too!
-					</p>
-				</div>
-			</div>
 
-			<div class="social">
-				<a class="linkedin" href="https://www.linkedin.com/in/noah-petrides/"></a>
-				<a class="facebook" href="https://facebook.com/noah.petrides"></a>
-				<a class="email" href="mailto:nopetrides@gmail.com"></a>
-			</div>
-		</header>
+		<!--JS inserted from components/header.js-->
+		<header-component></header-component>
 		<!--Fluid right side, contains portfolio links-->
 		<!--Previously content-->
 		<main>
@@ -62,8 +48,7 @@
 				<!--showcases most recent works-->
 				<div class="section">
 					<h2 id="games"><b>Games I Worked On</b></h2>
-					<p>Games are my passion. I've been playing them all my life but
-						decided I love making them just as much!</p>
+					<p>Games are my passion. I've been playing them all my life but decided I love making them just as much!</p>
 
 					<!--Main project on display-->
 					<div class="list">
@@ -177,11 +162,7 @@
 				<!--Teaching info-->
 				<div class="section">
 					<h2 class="links"><b>Professional Talents</b></h2>
-					<p>I am a Senior Software Engineer, and built my career on my 
-						professional programming experience developing video games. 
-						I am also a professor, and teach multiple college courses related 
-						to programming. Follow the links to see more about the courses 
-						I've taught, with video lectures and code examples.
+					<p>I am a Senior Software Engineer, and built my career on my professional programming experience developing video games. I am also a professor, and teach multiple college courses related	to programming. Follow the links to see more about the courses I've taught, with video lectures and code examples.
 					</p>
 
 					<div style="cursor: pointer;"
@@ -209,10 +190,7 @@
 				<!--YouTube-->
 				<div class="section">
 					<h2 class="links"><b>Videography</b></h2>
-					<p>Occasionally, I like to make videos.
-						I record my musical talents, events I attend,
-						and upload recording from games I've played and made.
-						Find me on YouTube!</p>
+					<p>Occasionally, I like to make videos.	I record my musical talents, events I attend, and upload recording from games I've played and made.	Find me on YouTube!</p>
 
 					<div style="cursor: pointer;"
 						onclick="window.location = 'https://www.youtube.com/channel/UCN35Quf5BxjZ-qkXhqAUWBg/videos';"
@@ -250,15 +228,13 @@
 				<!--Misc links to cool things I've done-->
 				<div class="section">
 					<h2 class="links"><b>Other Talents</b></h2>
-					<p>I have a ton of other hobbies. Here are some of the ones you can
-						check out on the web!</p>
+					<p>I have a ton of other hobbies. Here are some of the ones you can check out on the web!</p>
 
 					<div style="cursor: pointer;"
 						onclick="window.location = 'art_portfolio/art_home.html';"
 						class="other-list">
 						<div class="other-wrapper">
-							<div class="other-link"><a
-									href=art_portfolio/art_home.html>
+							<div class="other-link"><a href=art_portfolio/art_home.html>
 									<b>Art I Made</b></a>
 							</div>
 						</div>
@@ -268,36 +244,19 @@
 						onclick="window.location = 'authorship/author_home.html';"
 						class="other-list">
 						<div class="other-wrapper">
-							<div class="other-link"><a
-									href=authorship/author_home.html>
+							<div class="other-link"><a href=authorship/author_home.html>
 									<b>Stories I'm Writing</b></a>
 							</div>
 						</div>
 					</div>
 
-					<div style="cursor: pointer;"
-						onclick="window.location = 'someurlToThing';"
-						class="other-list">
-						<div class="other-wrapper">
-							<div class="other-link"><a
-									href=someUrlToThing>
-									<b>Coming soon</b></a>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 			<!--spacer-->
 			<div class=bottom>
 			</div>
-
-			<!--Previously "ending"-->
-			<footer>
-				<i class="fa fa-github" aria-hidden="true"></i>
-				Hey, I created this website!
-				<a href="https://github.com/nopetrides"> Check out my GitHub</a>
-				<i class="fa fa-github" aria-hidden="true"></i>
-			</footer>
+			<!--JS inserted from components/footer.js-->
+			<footer-component></footer-component>
 		</main>
 	</div>
 </body>
