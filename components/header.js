@@ -3,6 +3,7 @@ class Header extends HTMLElement {
         super();
     }
     connectedCallback() {
+        setTimeout(this.render);
         this.innerHTML = `
         <!--Fluid side banner, becomes top header when on mobile, 
 			contains personal and contact info-->

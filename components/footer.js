@@ -3,6 +3,7 @@ class Footer extends HTMLElement {
         super();
     }
     connectedCallback() {
+        setTimeout(this.render);
         this.innerHTML = `
         <footer>
             <i class="fa fa-github" aria-hidden="true"></i>
