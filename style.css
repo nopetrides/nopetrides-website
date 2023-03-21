@@ -31,10 +31,6 @@ div {
     display: block;
 }
 
-.whole {
-    display: block;
-}
-
 header {
     position: relative;
     background: #000 url("images/noahbg.jpg") center center;
@@ -127,12 +123,6 @@ header .social .email:hover {
     background-position: -0px -64px;
 }
 
-.portfolio {
-    padding-right: 10px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-}
-
 main {
     position: relative;
     width: 100%;
@@ -140,6 +130,30 @@ main {
     float: left;
     overflow-x: hidden;
     display: block;
+}
+
+footer {
+    background: rgb(50, 50, 50);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+}
+
+footer a {
+    text-decoration-color: #00A101;
+    color: #00A101;
+}
+
+.whole {
+    display: block;
+}
+
+.portfolio {
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
 }
 
 .list {
@@ -297,18 +311,43 @@ main {
     padding-top: 10px;
 }
 
-footer {
-    background: rgb(50, 50, 50);;
-    padding: 10px;
+.links {
+    display: flex;
     width: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    display: block;
+    height: 100%;
+    overflow: hidden;
+    /* margin: 0 -5px; */
+    justify-content: center;
 }
 
-footer a {
-    text-decoration-color: #00A101;
-    color: #00A101;
+.links img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.links a {
+    float: left;
+    padding: 8px 16px 4px 12px;
+    color: #000;
+    text-decoration: none;
+}
+
+.description {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 0px 5px;
+}
+
+.mobile-only a {
+    Color: black;
+    text-decoration: none;
+    background-color:#00A101;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.not-mobile {
+    display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -370,6 +409,11 @@ footer a {
     .project-wrapper-lesser .splash-text {
         font-size: 16px;
     }
+    .description {
+        padding-right: 60px;
+        padding-left: 60px;
+        margin: 0px 5px;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -383,4 +427,61 @@ footer a {
         font-size: 30px;
         top: 25%;        
     }
+
+    .mobile-only a {
+        display: none;
+    }
+    
+    .not-mobile {
+        display: block;
+        Color: white;
+        text-decoration: none;
+        text-align: left;
+        padding: 1em;
+        width:100%; 
+    }
+    .not-mobile caption {
+        font-size: 2em;
+        padding: .3em;
+    }
+
+    /* unvisited link */
+    .not-mobile a:link {
+        Color: rgb(0, 242, 255);
+        text-decoration: none;
+    }
+  
+    /* visited link */
+    .not-mobile a:visited {
+        Color: rgb(83, 110, 156);
+        text-decoration: none;
+    }
+
+    /* mouse over link */
+    .not-mobile a:hover {
+        Color: rgb(188, 121, 255);
+        text-decoration: none;
+    }
+
+    /* selected link */
+    .not-mobile a:active {
+        Color: rgb(0, 242, 255);
+        text-decoration: hotpink;
+    }
+
+    .not-mobile table, th, td {
+        border:1px solid black; 
+        border-collapse: collapse;
+        padding: .3em;
+    }
+    .not-mobile table, th{
+        background-color: black;
+    }
+    .not-mobile table tr:nth-child(even) {
+        background-color: rgb(50, 50, 50);
+    }
+    .not-mobile table tr:nth-child(odd) {
+        background-color: #242424;
+    }
+    
 }

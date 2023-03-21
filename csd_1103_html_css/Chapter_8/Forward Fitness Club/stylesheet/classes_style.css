@@ -1,0 +1,39 @@
+
+/* media query tablet */
+@media only screen and (min-width: 660px) {
+    table {
+        border: 0.1em solid black;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+
+    th, td {
+        border: 0.1em solid black;
+        padding: 1em;
+    }
+
+    th {
+        background-color: #1d1d1c;
+        color: white;
+    }
+}
+
+/* desktop view query */
+@media only screen and (min-width: 830px) {
+    table {
+        background-color: white;
+        width: 85%;
+    }
+
+    caption{
+        color: white;
+    }
+}
