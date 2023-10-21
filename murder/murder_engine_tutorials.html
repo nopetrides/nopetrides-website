@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--This website was created by Noah Petrides-->
+<!--Everything in this file is html and read as such by a browser-->
+<html lang="en">
+
+<!--Info about the webpage, not part of the actual page contents-->
+
+<head>
+    <title>Noah Petrides</title>
+
+    <meta charset="utf-8">
+    <meta property="og:title" content="Noah Petrides" />
+    <meta property="og:site_name" content="Noah Petrides" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nopetrides.com/" />
+    <meta property="og:image" content="http://nopetrides.com/images/preview.png" />
+
+    <!--Don't cache me so I can develop please
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" /> -->
+
+    <meta name="description"
+        content="Hello! I am a game programmer in Vancouver, Canada. When I make my own games, I do art and music too!">
+    <meta name="keywords"
+        content="noah petrides senior software engineer game developer programmer gamedev indie games web design art">
+    <meta name="author" content="Noah Petrides" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="icon" href="../images/ico.png">
+    <link rel="shortcut icon" href="../images/ico.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../return.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <!--Wrapper for entire layout-->
+    <div class="whole">
+        <!--JS inserted from components/header.js-->
+        <header-component></header-component>
+
+        <!-- -->
+        <main>
+            <div class="description">
+                <h2>Murder Engine C# Game Development</h2>
+                <p>Murder is a pixel art ECS game engine built on top of MonoGame. I've created a few video tutorials to show the basics of the engine, C# programming, and how to use ECS for games. Check out the playlist!</p>
+
+                <div class="video-container">
+                    <iframe class="playlist" src="https://www.youtube.com/embed/videoseries?si=ftQT7scV4y6gNsdL&amp;list=PLQqKtCdJUMQ54OiCA_HLMQHQGaBprQBTp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="back">
+                    <a href=../../index.html>
+                        &lt;&lt; Portfolio
+                        <div class="pointer pointer-hovering">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottom"></div>
+            <!--JS inserted from components/footer.js-->
+            <footer-component></footer-component>
+        </main>
+
+    </div>
+</body>
+
+</html>
