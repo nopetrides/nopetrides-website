@@ -233,6 +233,10 @@ footer a {
     opacity: .7;
 }
 
+.project-wrapper-lesser img:hover .pointer {
+    transform: scale(1.5);
+}
+
 .project-wrapper-lesser .splash-text {
     font-size: 16px;
 }
